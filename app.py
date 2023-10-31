@@ -24,6 +24,17 @@ st.markdown(
     .content {
         margin: 20px;
     }
+    
+    @media screen and (max-width: 768px) {
+        /* Adjust styles for screens with a width of 768px or less */
+        body {
+            font-size: 14px;
+        }
+        .button {
+            padding: 10px 15px;
+        }
+        /* Add more responsive styles as needed */
+    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -78,7 +89,7 @@ d_button_style = (
     'border-radius: 4px;'
 )
 p_button_style = (
-    'width: 170px; '
+    'width: 345px; '
     'background-color: green; '
     'color: white; '
     'padding: 10px; '
