@@ -254,6 +254,6 @@ if st.button("Contact Me", use_container_width=True, type='primary'):
     st.markdown('<div class="text-with-background">✉️ Email: samarthbhamareofficial@gamil.com</div>', unsafe_allow_html=True)
 
     # Link to your LinkedIn profile with transparent black background
-    linkedin_url = "https://www.linkedin.com/in/your-profile/"
+    linkedin_url = "https://www.linkedin.com/in/samarth-bhamare/"
     st.markdown(f'<div class="text-with-background">🔗 LinkedIn: <a href="{linkedin_url}">{linkedin_url}</a></div>', unsafe_allow_html=True)
 
