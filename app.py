@@ -24,17 +24,6 @@ st.markdown(
     .content {
         margin: 20px;
     }
-    
-    @media screen and (max-width: 768px) {
-        /* Adjust styles for screens with a width of 768px or less */
-        body {
-            font-size: 14px;
-        }
-        .button {
-            padding: 10px 15px;
-        }
-        /* Add more responsive styles as needed */
-    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -89,7 +78,7 @@ d_button_style = (
     'border-radius: 4px;'
 )
 p_button_style = (
-    'width: 705px; '
+    'width: 170px; '
     'background-color: green; '
     'color: white; '
     'padding: 10px; '
@@ -183,27 +172,54 @@ if selected_tab == "Machine Learning Projects":
 
 if selected_tab == "PowerBI Projects":
     st.title('PowerBI Projects')
-    st.header('1. Netflix Analysis Dashboard')
-    st.image('PowerBI/Netflix Dashboard.jpg', use_column_width="auto")
-    st.markdown(
-        '<a style="{}" href="https://github.com/Samarth0211/PowerBI-NetflixDashbaord/archive/refs/heads/main.zip" target="_blank">Download Project</a>'.format(
-            p_button_style), unsafe_allow_html=True)
-    st.header('2. IPL Analysis Dashboard')
-    st.image('PowerBI/ipl_dashboard.jpg', use_column_width="auto")
-    st.markdown(
-        '<a style="{}" href="https://github.com/Samarth0211/PowerBI-IPLDashboard/archive/refs/heads/main.zip" target="_blank">Download Project</a>'.format(
-            p_button_style), unsafe_allow_html=True)
-
-    st.header('3. Road Accident Analysis Dashboard')
-    st.image('PowerBI/Road Accident Dashboard.jpg', use_column_width="auto")
-    st.markdown(
-        '<a style="{}" href="https://github.com/Samarth0211/PowerBI-RoadAccident/archive/refs/heads/main.zip" target="_blank">Download Project</a>'.format(
-            p_button_style), unsafe_allow_html=True)
-    st.header('4. Diwali Sales Analysis Dashboard')
-    st.image('PowerBI/diwali sales dashboard.jpg', use_column_width="auto")
-    st.markdown(
-        '<a style="{}" href="https://github.com/Samarth0211/PowerBI-DiwaliSalesAnalysis/archive/refs/heads/main.zip" target="_blank">Download Project</a>'.format(
-            p_button_style), unsafe_allow_html=True)
+    st.markdown('---')
+    col19,col20 = st.columns(2)
+    with col19:
+        st.header('1. Netflix Analysis Dashboard')
+        st.image('PowerBI/Netflix Dashboard.jpg', use_column_width="auto")
+        st.markdown(
+            """
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="{}" href="https://github.com/Samarth0211/PowerBI-NetflixDashbaord/archive/refs/heads/main.zip" target="_blank">Download Project</a>
+            </div>
+            """.format(p_button_style),
+            unsafe_allow_html=True
+        )
+    with col20:
+        st.header('2. IPL Analysis Dashboard')
+        st.image('PowerBI/ipl_dashboard.jpg', use_column_width="auto")
+        st.markdown(
+            """
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="{}" href="https://github.com/Samarth0211/PowerBI-IPLDashboard/archive/refs/heads/main.zip" target="_blank">Download Project</a>
+            </div>
+            """.format(p_button_style),
+            unsafe_allow_html=True
+        )
+    st.markdown('---')
+    col21, col22 = st.columns(2)
+    with col21:
+        st.header('3. Road Accident Analysis Dashboard')
+        st.image('PowerBI/Road Accident Dashboard.jpg', use_column_width="auto")
+        st.markdown(
+            """
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="{}" href="https://github.com/Samarth0211/PowerBI-RoadAccident/archive/refs/heads/main.zip" target="_blank">Download Project</a>
+            </div>
+            """.format(p_button_style),
+            unsafe_allow_html=True
+        )
+    with col22:
+        st.header('4. Diwali Sales Analysis Dashboard')
+        st.image('PowerBI/diwali sales dashboard.jpg', use_column_width="auto")
+        st.markdown(
+            """
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <a style="{}" href="https://github.com/Samarth0211/PowerBI-DiwaliSalesAnalysis/archive/refs/heads/main.zip" target="_blank">Download Project</a>
+            </div>
+            """.format(p_button_style),
+            unsafe_allow_html=True
+        )
 
 st.markdown('---')
 
